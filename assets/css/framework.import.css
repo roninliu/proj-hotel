@@ -1,0 +1,56 @@
+/**
+ *
+ *	全局样式
+ * 
+ */
+
+
+/* 重置标点字体：逗号，句号，冒号，分号，问号，顿号，省略号，间隔号 */
+@font-face{
+	font-family:punctuation;
+	unicode-range:U+FF0C, U+3002, U+FF1A, U+FF1B, U+FF1F, U+3001, U+2026, U+00B7;
+	src:local(Simhei), local(Simsun);	
+}
+
+/* 重置标点字体：单、双引号“”‘’ */
+@font-face{
+	font-family:punctuation;
+	unicode-range:U+201C-201D, U+2018-2019;
+	src:local(STHeiti), local(Simhei);
+}
+
+/* 重置标点字体：破折号 */
+@font-face{
+	font-family:punctuation;
+	unicode-range:U+2014;
+	src:local("Microsoft Yahei"), local(Simhei);	
+}
+
+/* --------------------------------------------------------------------------
+   修复 Firefox 不支持 unicode-range 导致样式失效的问题
+   -------------------------------------------------------------------------- */
+
+/**
+ * @bug: https://bugzilla.mozilla.org/show_bug.cgi?id=unicode-range
+ * @doc: http://newhtml.net/custom-font-stacks-with-unicode-range/
+ */
+@font-face {
+    font-family:punctuation;
+    src: local('Fix Firefox');
+    unicode-range: U+270C;
+}
+
+/*
+字体调整 by ytzong
+由于V8默认为雅黑，通过class调整字体已无必要
+*/
+body,
+input,
+textarea,
+select,
+button{font-family:punctuation, "Hiragino Sans GB", "Helvetica Neue","微软雅黑",sans-serif}
+
+
+
+
+.footer{text-align: center;}

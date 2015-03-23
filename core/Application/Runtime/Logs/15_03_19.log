@@ -1,0 +1,11 @@
+[ 2015-03-19T22:28:06+08:00 ] ::1 /proj-hotel/core/api.php/login
+ERR: SQLSTATE[HY000] [2002] No such file or directory
+
+[ 2015-03-19T22:31:08+08:00 ] ::1 /proj-hotel/core/api.php/login
+ERR: SQLSTATE[HY000] [2002] No such file or directory
+
+[ 2015-03-19T22:34:34+08:00 ] ::1 /proj-hotel/core/api.php/login
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `employe` WHERE ( username = 'admin' )  [ RunTime:0.0008s ]
+

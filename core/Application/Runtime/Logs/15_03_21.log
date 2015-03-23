@@ -1,0 +1,5 @@
+[ 2015-03-21T21:28:01+08:00 ] ::1 /proj-hotel/core/api.php/login
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.2659s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `employe` WHERE ( username = 'admin' )  [ RunTime:0.0506s ]
+
