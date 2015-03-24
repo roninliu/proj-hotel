@@ -1,16 +1,16 @@
 <?php
-    session_start();
+session_start();
 ?>
 <?php
-    $userid = $_SESSION["id"];
-    $username = $_SESSION["name"];
-    if($username == null){
-        header("Location: ../login.php");
-        exit;
-    }
+$userid = $_SESSION["id"];
+$username = $_SESSION["name"];
+if ($username == null) {
+	header("Location: ../login.php");
+	exit;
+}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

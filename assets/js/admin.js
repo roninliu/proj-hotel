@@ -35,6 +35,7 @@ define(function(require, exports, module) {
 				nickname: $("#employeName").val(),
 				depart: $("#departList").val(),
 				email: $("#employeEmail").val(),
+				username:$("#username").val(),
 				enabled: $("input[type=radio][name=optionsRadiosInline]").val()
 			}
 			employe.saveEmployeHandler(saveObj);
@@ -44,6 +45,7 @@ define(function(require, exports, module) {
 			$("#ePanelHeader").text("");
 			$("#targetId").val("");
 			$("#employeId").val("");
+			$("#username").val("");
 			$("#employeName").val("");
 			$("#departList").val("");
 			$("#employeEmail").val("");

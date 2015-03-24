@@ -40,6 +40,8 @@ define(function(require, exports, module) {
 				}, {
 					"data": "nick_name"
 				}, {
+					"data":"username"
+				},{
 					"data": "name"
 				}, {
 					"data": "email"
@@ -48,7 +50,7 @@ define(function(require, exports, module) {
 				}],
 				"columnDefs": [{
 					"width": "15%",
-					"targets": 4,
+					"targets": 5,
 					"render": function(data) {
 						var htmlStr = '<a class="btn btn-default" href="javascript:;" data-id="' + data + '" data-type="edit"><i class="fa fa-edit"></i> 编辑</a>';
 						htmlStr += '<a class="btn btn-default" href="javascript:;" data-id="' + data + '" data-type="delete"><i class="fa fa-times"></i> 删除</a>';
@@ -103,6 +105,7 @@ define(function(require, exports, module) {
 			$("#targetId").val(sData.id);
 			$("#employeId").val(sData.employe_id);
 			$("#employeName").val(sData.nick_name);
+			$("#username").val(sData.username);
 			$("#departList").val(sData.d_id);
 			$("#employeEmail").val(sData.email);
 			if (sData.enable == 1) {
@@ -124,12 +127,14 @@ define(function(require, exports, module) {
 				type: "POST",
 				data: data,
 				success: function(data) {
+					console.log(data);
 					if (data) {
 						alert("更新成功！");
 						$("#ePanel").addClass("none");
 						$("#ePanelHeader").text("");
 						$("#targetId").val("");
 						$("#employeId").val("");
+						$("#username").val("");
 						$("#employeName").val("");
 						$("#departList").val("");
 						$("#employeEmail").val("");

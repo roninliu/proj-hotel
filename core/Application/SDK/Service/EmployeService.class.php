@@ -118,6 +118,7 @@ class EmployeService extends Model {
 
 	public function addEmploye($map) {
 		$employeModel = M("Employe");
+		$map["password"] = 000000; //设置初始化密码为6个零
 		$result = $employeModel->add($map);
 		return $result;
 	}

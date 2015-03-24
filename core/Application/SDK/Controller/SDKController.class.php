@@ -52,6 +52,7 @@ class SDKController extends Controller {
 			'employe_id' => I("employe_id"),
 			'nick_name' => I("nickname"),
 			'department' => I("depart"),
+			'username' => I("username"),
 			'enable' => I("enabled"),
 			'email' => I('email'),
 		);

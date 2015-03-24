@@ -6,11 +6,12 @@
     <h4 class="page-header">员工管理</h4>
 </div>
 <div class="page-container">
-	<table id="employeTable" class="display" cellspacing="0" width="100%">
+	<table id="employeTable" class="display " cellspacing="0" width="100%">
         <thead>
             <tr>
                 <th>员工ID</th>
                 <th>员工名称</th>
+                <th>员工帐号</th>
                 <th>员工部门</th>
                 <th>员工邮箱</th>
                 <th>操作</th>
@@ -33,6 +34,10 @@
             <div class="form-group">
                 <label>员工名称：</label>
                 <input class="form-control" placeholder="员工名称" id="employeName">
+            </div>
+            <div class="form-group">
+                <label>员工账户：</label>
+                <input class="form-control" placeholder="员工账户" id="username">
             </div>
             <div class="form-group">
                 <label>员工部门：</label>
