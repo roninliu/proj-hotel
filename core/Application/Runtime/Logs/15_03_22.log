@@ -1,8 +1,0 @@
-[ 2015-03-22T20:37:02+08:00 ] ::1 /proj-hotel/core/api.php/login
-SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.1703s ]
-SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0183s ]
-SQL: SELECT * FROM `employe` WHERE ( username = 'admin' )  [ RunTime:0.1357s ]
-
-[ 2015-03-22T22:30:08+08:00 ] ::1 /proj-hotel/core/api.php/getEmployeHandler?sEcho=1&iColumns=6&sColumns=%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=10&mDataProp_0=0&sSearch_0=&bRegex_0=false&bSearchable_0=true&bSortable_0=true&mDataProp_1=1&sSearch_1=&bRegex_1=false&bSearchable_1=true&bSortable_1=true&mDataProp_2=2&sSearch_2=&bRegex_2=false&bSearchable_2=true&bSortable_2=true&mDataProp_3=3&sSearch_3=&bRegex_3=false&bSearchable_3=true&bSortable_3=true&mDataProp_4=4&sSearch_4=&bRegex_4=false&bSearchable_4=true&bSortable_4=true&mDataProp_5=5&sSearch_5=&bRegex_5=false&bSearchable_5=true&bSortable_5=true&sSearch=&bRegex=false&iSortCol_0=0&sSortDir_0=asc&iSortingCols=1&_=1427034608027
-SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0023s ]
-

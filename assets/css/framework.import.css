@@ -1,7 +1,7 @@
 /**
  *
  *	全局样式
- * 
+ *
  */
 
 
@@ -9,7 +9,7 @@
 @font-face{
 	font-family:punctuation;
 	unicode-range:U+FF0C, U+3002, U+FF1A, U+FF1B, U+FF1F, U+3001, U+2026, U+00B7;
-	src:local(Simhei), local(Simsun);	
+	src:local(Simhei), local(Simsun);
 }
 
 /* 重置标点字体：单、双引号“”‘’ */
@@ -23,7 +23,7 @@
 @font-face{
 	font-family:punctuation;
 	unicode-range:U+2014;
-	src:local("Microsoft Yahei"), local(Simhei);	
+	src:local("Microsoft Yahei"), local(Simhei);
 }
 
 /* --------------------------------------------------------------------------
@@ -52,5 +52,5 @@ button{font-family:punctuation, "Hiragino Sans GB", "Helvetica Neue","微软雅�
 
 
 
-
+.none{display: none;visibility: hidden;}
 .footer{text-align: center;}

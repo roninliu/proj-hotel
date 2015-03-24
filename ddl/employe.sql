@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50622
 File Encoding         : 65001
 
-Date: 2015-03-23 20:37:29
+Date: 2015-03-24 18:08:47
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -91,14 +91,12 @@ INSERT INTO `employe` VALUES ('54', 'admin', '21232f297a57a5a743894a0e4a801fc3',
 INSERT INTO `employe` VALUES ('55', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
 INSERT INTO `employe` VALUES ('56', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
 INSERT INTO `employe` VALUES ('57', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
-INSERT INTO `employe` VALUES ('58', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
+INSERT INTO `employe` VALUES ('58', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员飞过海', '2', '1');
 INSERT INTO `employe` VALUES ('59', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
-INSERT INTO `employe` VALUES ('60', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
+INSERT INTO `employe` VALUES ('60', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员规范化', '2', '1');
 INSERT INTO `employe` VALUES ('61', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
-INSERT INTO `employe` VALUES ('62', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
-INSERT INTO `employe` VALUES ('63', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
+INSERT INTO `employe` VALUES ('62', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员法国恢复和', '2', '1');
+INSERT INTO `employe` VALUES ('63', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员法国恢复供货', '2', '1');
 INSERT INTO `employe` VALUES ('64', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
-INSERT INTO `employe` VALUES ('65', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
-INSERT INTO `employe` VALUES ('66', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
-INSERT INTO `employe` VALUES ('67', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
-INSERT INTO `employe` VALUES ('68', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员', '2', '1');
+INSERT INTO `employe` VALUES ('67', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理4444', '2', '1');
+INSERT INTO `employe` VALUES ('68', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@localhost.com', '1000', '管理员4441111114444433333', '3', '1');

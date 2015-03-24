@@ -87,7 +87,6 @@ define(function(require, exports, module) {
 	 */
 	exports.init = function() {
 		var loginBtn = $("#login_btn");
-		console.log(config.ROOT_PATH);
 		loginBtn.on("click", function() {
 			var username = $("#username").val();
 			var password = $("#password").val();
