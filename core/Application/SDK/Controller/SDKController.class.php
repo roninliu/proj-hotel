@@ -119,7 +119,10 @@ class SDKController extends Controller {
 		}
 		$this->ajaxReturn($result);
 	}
-
+	/**
+	 * [deleteMachineHandler description]
+	 * @return [type] [description]
+	 */
 	public function deleteMachineHandler() {
 		$machineService = D("Machine", "Service");
 		$result = $machineService->deleteMachine(I("id"));
