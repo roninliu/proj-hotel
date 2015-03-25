@@ -1233,3 +1233,145 @@ SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0049s ]
 SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0038s ]
 SQL: SELECT * FROM `department`  [ RunTime:0.0003s ]
 
+[ 2015-03-25T15:47:03+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:03+08:00 ] ::1 /proj-hotel/core/api.php/getMachineHandler?sEcho=1&iColumns=5&sColumns=%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=name&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=ip&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=description&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=enable&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=id&sSearch_4=&bRegex_4=false&bSearchable_4=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `machine` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM machine ORDER BY id DESC  LIMIT 0,15 [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:03+08:00 ] ::1 /proj-hotel/core/api.php/getEmployeHandler?sEcho=1&iColumns=6&sColumns=%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=employe_id&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=nick_name&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=username&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=name&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=email&sSearch_4=&bRegex_4=false&bSearchable_4=true&mDataProp_5=id&sSearch_5=&bRegex_5=false&bSearchable_5=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `employe` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT e.id,e.username,e.email,e.employe_id,e.nick_name,e.enable,d.id AS d_id,d.name,d.number FROM department AS d,employe AS e WHERE d.id = e.department AND e.enable = 1 ORDER BY e.id DESC  LIMIT 0,15 [ RunTime:0.0007s ]
+
+[ 2015-03-25T15:47:03+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0003s ]
+
+[ 2015-03-25T15:47:04+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:04+08:00 ] ::1 /proj-hotel/core/api.php/getMachineHandler?sEcho=1&iColumns=5&sColumns=%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=name&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=ip&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=description&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=enable&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=id&sSearch_4=&bRegex_4=false&bSearchable_4=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `machine` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM machine ORDER BY id DESC  LIMIT 0,15 [ RunTime:0.0001s ]
+
+[ 2015-03-25T15:47:05+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:05+08:00 ] ::1 /proj-hotel/core/api.php/getEmployeHandler?sEcho=1&iColumns=6&sColumns=%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=employe_id&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=nick_name&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=username&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=name&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=email&sSearch_4=&bRegex_4=false&bSearchable_4=true&mDataProp_5=id&sSearch_5=&bRegex_5=false&bSearchable_5=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `employe` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT e.id,e.username,e.email,e.employe_id,e.nick_name,e.enable,d.id AS d_id,d.name,d.number FROM department AS d,employe AS e WHERE d.id = e.department AND e.enable = 1 ORDER BY e.id DESC  LIMIT 0,15 [ RunTime:0.0007s ]
+
+[ 2015-03-25T15:47:07+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:07+08:00 ] ::1 /proj-hotel/core/api.php/getEmployeHandler?sEcho=1&iColumns=6&sColumns=%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=employe_id&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=nick_name&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=username&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=name&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=email&sSearch_4=&bRegex_4=false&bSearchable_4=true&mDataProp_5=id&sSearch_5=&bRegex_5=false&bSearchable_5=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `employe` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT e.id,e.username,e.email,e.employe_id,e.nick_name,e.enable,d.id AS d_id,d.name,d.number FROM department AS d,employe AS e WHERE d.id = e.department AND e.enable = 1 ORDER BY e.id DESC  LIMIT 0,15 [ RunTime:0.0005s ]
+
+[ 2015-03-25T15:47:08+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:08+08:00 ] ::1 /proj-hotel/core/api.php/getMachineHandler?sEcho=1&iColumns=5&sColumns=%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=name&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=ip&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=description&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=enable&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=id&sSearch_4=&bRegex_4=false&bSearchable_4=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `machine` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM machine ORDER BY id DESC  LIMIT 0,15 [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:10+08:00 ] ::1 /proj-hotel/core/api.php/getEmployeHandler?sEcho=1&iColumns=6&sColumns=%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=employe_id&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=nick_name&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=username&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=name&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=email&sSearch_4=&bRegex_4=false&bSearchable_4=true&mDataProp_5=id&sSearch_5=&bRegex_5=false&bSearchable_5=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `employe` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT e.id,e.username,e.email,e.employe_id,e.nick_name,e.enable,d.id AS d_id,d.name,d.number FROM department AS d,employe AS e WHERE d.id = e.department AND e.enable = 1 ORDER BY e.id DESC  LIMIT 0,15 [ RunTime:0.0008s ]
+
+[ 2015-03-25T15:47:10+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0003s ]
+
+[ 2015-03-25T15:47:10+08:00 ] ::1 /proj-hotel/core/api.php/getEmployeHandler?sEcho=1&iColumns=6&sColumns=%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=employe_id&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=nick_name&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=username&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=name&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=email&sSearch_4=&bRegex_4=false&bSearchable_4=true&mDataProp_5=id&sSearch_5=&bRegex_5=false&bSearchable_5=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `employe` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT e.id,e.username,e.email,e.employe_id,e.nick_name,e.enable,d.id AS d_id,d.name,d.number FROM department AS d,employe AS e WHERE d.id = e.department AND e.enable = 1 ORDER BY e.id DESC  LIMIT 0,15 [ RunTime:0.0005s ]
+
+[ 2015-03-25T15:47:10+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:11+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:11+08:00 ] ::1 /proj-hotel/core/api.php/getMachineHandler?sEcho=1&iColumns=5&sColumns=%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=name&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=ip&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=description&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=enable&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=id&sSearch_4=&bRegex_4=false&bSearchable_4=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `machine` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM machine ORDER BY id DESC  LIMIT 0,15 [ RunTime:0.0001s ]
+
+[ 2015-03-25T15:47:11+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:11+08:00 ] ::1 /proj-hotel/core/api.php/getEmployeHandler?sEcho=1&iColumns=6&sColumns=%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=employe_id&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=nick_name&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=username&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=name&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=email&sSearch_4=&bRegex_4=false&bSearchable_4=true&mDataProp_5=id&sSearch_5=&bRegex_5=false&bSearchable_5=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `employe` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT e.id,e.username,e.email,e.employe_id,e.nick_name,e.enable,d.id AS d_id,d.name,d.number FROM department AS d,employe AS e WHERE d.id = e.department AND e.enable = 1 ORDER BY e.id DESC  LIMIT 0,15 [ RunTime:0.0005s ]
+
+[ 2015-03-25T15:47:38+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:39+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0003s ]
+
+[ 2015-03-25T15:47:39+08:00 ] ::1 /proj-hotel/core/api.php/getMachineHandler?sEcho=1&iColumns=5&sColumns=%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=name&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=ip&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=description&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=enable&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=id&sSearch_4=&bRegex_4=false&bSearchable_4=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `machine` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `machine` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM machine ORDER BY id DESC  LIMIT 0,15 [ RunTime:0.0003s ]
+
+[ 2015-03-25T15:47:39+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
+[ 2015-03-25T15:47:39+08:00 ] ::1 /proj-hotel/core/api.php/getEmployeHandler?sEcho=1&iColumns=6&sColumns=%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=15&mDataProp_0=employe_id&sSearch_0=&bRegex_0=false&bSearchable_0=true&mDataProp_1=nick_name&sSearch_1=&bRegex_1=false&bSearchable_1=true&mDataProp_2=username&sSearch_2=&bRegex_2=false&bSearchable_2=true&mDataProp_3=name&sSearch_3=&bRegex_3=false&bSearchable_3=true&mDataProp_4=email&sSearch_4=&bRegex_4=false&bSearchable_4=true&mDataProp_5=id&sSearch_5=&bRegex_5=false&bSearchable_5=true&sSearch=&bRegex=false
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `employe` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `employe` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT e.id,e.username,e.email,e.employe_id,e.nick_name,e.enable,d.id AS d_id,d.name,d.number FROM department AS d,employe AS e WHERE d.id = e.department AND e.enable = 1 ORDER BY e.id DESC  LIMIT 0,15 [ RunTime:0.0005s ]
+
+[ 2015-03-25T15:47:40+08:00 ] ::1 /proj-hotel/core/api.php/getDepHandler
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0002s ]
+
