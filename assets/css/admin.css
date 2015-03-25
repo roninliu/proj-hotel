@@ -23,3 +23,5 @@
 .dataTable .btn{margin-right: 10px;}
 
 .employe-panel{position: fixed; z-index: 100; top:10%; left: 50%; width: 450px;  margin-left: -225px;}
+
+.machine-panel{position: fixed; z-index: 100; top:10%; left: 50%; width: 450px;  margin-left: -225px;}

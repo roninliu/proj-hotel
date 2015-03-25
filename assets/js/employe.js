@@ -7,6 +7,10 @@ define(function(require, exports, module) {
 
 	var config = require("./config");
 	var eTables = null;
+	/**
+	 * [initDataTableHandler description]
+	 * @return {[type]} [description]
+	 */
 	var initDataTableHandler = function() {
 			eTables = $('#employeTable').dataTable({
 				"oLanguage": {
@@ -23,8 +27,8 @@ define(function(require, exports, module) {
 					},
 					"sSearch": "搜索："
 				},
-				"aLengthMenu": [20, 50, 100],
-				"iDisplayLength": 20,
+				"aLengthMenu": [15, 20, 50, 100],
+				"iDisplayLength": 15,
 				"fnServerData": function(sSource, aDataSet, fnCallback) {
 					$.ajax({
 						"type": "GET",
@@ -40,8 +44,8 @@ define(function(require, exports, module) {
 				}, {
 					"data": "nick_name"
 				}, {
-					"data":"username"
-				},{
+					"data": "username"
+				}, {
 					"data": "name"
 				}, {
 					"data": "email"
@@ -121,26 +125,55 @@ define(function(require, exports, module) {
 		 * @return {[type]}      [description]
 		 */
 	var saveEmployeHandler = function(data) {
-		if (data != null) {
-			$.ajax({
-				url: config.ROOT_PATH + "saveEmployeHandler",
-				type: "POST",
-				data: data,
-				success: function(data) {
-					console.log(data);
-					if (data) {
-						alert("更新成功！");
-						$("#ePanel").addClass("none");
-						$("#ePanelHeader").text("");
-						$("#targetId").val("");
-						$("#employeId").val("");
-						$("#username").val("");
-						$("#employeName").val("");
-						$("#departList").val("");
-						$("#employeEmail").val("");
-						$("#optionsRadiosInline1").attr("checked", true);
-						$("#optionsRadiosInline2").attr("checked", false);
+			if (data != null) {
+				$.ajax({
+					url: config.ROOT_PATH + "saveEmployeHandler",
+					type: "POST",
+					data: data,
+					success: function(data) {
+						console.log(data);
+						if (data) {
+							alert("操作成功！");
+							$("#ePanel").addClass("none");
+							$("#ePanelHeader").text("");
+							$("#targetId").val("");
+							$("#employeId").val("");
+							$("#username").val("");
+							$("#employeName").val("");
+							$("#departList").val("");
+							$("#employeEmail").val("");
+							$("#optionsRadiosInline1").attr("checked", true);
+							$("#optionsRadiosInline2").attr("checked", false);
 
+							eTables.fnClearTable();
+							eTables.fnDraw();
+						} else {
+							alert("更新失败，服务器异常！");
+						}
+					},
+					error: function(err) {
+						console.log(err);
+					}
+				})
+			} else {
+				return false;
+			}
+		}
+		/**
+		 * [deleteEmployeHandler description]
+		 * @param  {[type]} id [description]
+		 * @return {[type]}    [description]
+		 */
+	var deleteEmployeHandler = function(id) {
+			$.ajax({
+				url: config.ROOT_PATH + "deleteEmployeHandler",
+				type: "POST",
+				data: {
+					id: id
+				},
+				success: function(data) {
+					if (data) {
+						alert("删除成成功！");
 						eTables.fnClearTable();
 						eTables.fnDraw();
 					} else {
@@ -151,38 +184,12 @@ define(function(require, exports, module) {
 					console.log(err);
 				}
 			})
-		} else {
-			return false;
 		}
-	}
-	/**
-	 * [deleteEmployeHandler description]
-	 * @param  {[type]} id [description]
-	 * @return {[type]}    [description]
-	 */
-	var deleteEmployeHandler = function(id) {
-		$.ajax({
-			url: config.ROOT_PATH + "deleteEmployeHandler",
-			type: "POST",
-			data: {
-				id: id
-			},
-			success: function(data) {
-				if (data) {
-					alert("删除成成功！");
-					eTables.fnClearTable();
-					eTables.fnDraw();
-				} else {
-					alert("更新失败，服务器异常！");
-				}
-			},
-			error: function(err) {
-				console.log(err);
-			}
-		})
-	}
-
-	var getEmployNewId = function(){
+		/**
+		 * [getEmployNewId description]
+		 * @return {[type]} [description]
+		 */
+	var getEmployNewId = function() {
 		$.ajax({
 			url: config.ROOT_PATH + "getEmployNewId",
 			type: "GET",
@@ -204,6 +211,6 @@ define(function(require, exports, module) {
 		getDepHandler: getDepartmentHandler,
 		saveEmployeHandler: saveEmployeHandler,
 		deleteEmployeHandler: deleteEmployeHandler,
-		getEmployNewId:getEmployNewId
+		getEmployNewId: getEmployNewId
 	};
 })

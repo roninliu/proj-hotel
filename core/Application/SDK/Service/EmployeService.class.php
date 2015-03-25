@@ -112,13 +112,16 @@ class EmployeService extends Model {
 		$employeModel = M("Employe");
 		$sql = "select * from employe order by id DESC limit 1";
 		$result = $employeModel->order("id DESC ")->find();
-		$id = $result["employe_id"] + $result["id"];
+		$id = $result["employe_id"] + 1;
 		return $id;
 	}
-
+	/**
+	 * [addEmploye description]
+	 * @param [type] $map [description]
+	 */
 	public function addEmploye($map) {
 		$employeModel = M("Employe");
-		$map["password"] = 000000; //设置初始化密码为6个零
+		$map["password"] = "000000"; //设置初始化密码为6个零
 		$result = $employeModel->add($map);
 		return $result;
 	}

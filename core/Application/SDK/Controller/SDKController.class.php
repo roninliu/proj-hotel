@@ -73,10 +73,56 @@ class SDKController extends Controller {
 		$result = $employeService->deleteEmploye(I("id"));
 		$this->ajaxReturn($result);
 	}
-
+	/**
+	 * [getEmployNewId description]
+	 * @return [type] [description]
+	 */
 	public function getEmployNewId() {
 		$employeService = D("Employe", "Service");
 		$result = $employeService->findNewEmployeId();
+		$this->ajaxReturn($result);
+	}
+
+	/**
+	 * [getMachineHandler description]
+	 * @return [type] [description]
+	 */
+	public function getMachineHandler() {
+		$machineService = D("Machine", "Service");
+		$requstMap = array(
+			'sEcho' => I("sEcho"),
+			'iDisplayStart' => I("iDisplayStart"),
+			'iDisplayLength' => I('iDisplayLength'),
+			'sSearch' => I('sSearch'),
+		);
+		$result = $machineService->findMachine($requstMap);
+		$this->ajaxReturn($result);
+	}
+	/**
+	 * [saveMachineHandler description]
+	 * @return [type] [description]
+	 */
+	public function saveMachineHandler() {
+		$machineService = D("Machine", "Service");
+		$requstMap = array(
+			'id' => I("id"),
+			'name' => I("name"),
+			'ip' => I('ip'),
+			'description' => I('description'),
+			'enable' => I('enable'),
+		);
+		$result = false;
+		if ($requstMap["id"] != null) {
+			$result = $machineService->updateMachine($requstMap);
+		} else {
+			$result = $machineService->addMachine($requstMap);
+		}
+		$this->ajaxReturn($result);
+	}
+
+	public function deleteMachineHandler() {
+		$machineService = D("Machine", "Service");
+		$result = $machineService->deleteMachine(I("id"));
 		$this->ajaxReturn($result);
 	}
 }

@@ -51,6 +51,8 @@ select,
 button{font-family:punctuation, "Hiragino Sans GB", "Helvetica Neue","微软雅黑",sans-serif}
 
 
+.txtoverflow{white-space: nowrap;width: 100%;display: inline-block;text-overflow:ellipsis; max-width: 540px; overflow: hidden;}
+
 
 .none{display: none;visibility: hidden;}
 .footer{text-align: center;}

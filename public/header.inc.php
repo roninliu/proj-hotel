@@ -30,7 +30,7 @@ if ($username == null) {
         <div class="navbar navbar-default navbar-static-top" role="navigation">
             <a class="navbar-brand" href="#">酒店多媒体系统</a>
             <ul class="nav navbar-top-links navbar-left menu" id="menu">
-               <li  class="menu-multimedia"><a href="#"><i class="fa fa-table fa-fw"></i> 多媒体信息</a></li>
+               <li  class="menu-multimedia"><a href="../admin/multimedia.php"><i class="fa fa-table fa-fw"></i> 多媒体信息</a></li>
                <li  class="menu-machine"><a href="../admin/machine.php"><i class="fa fa-wrench fa-fw"></i> 设备管理</a></li>
                <li  class="meun-employe"><a href="../admin/employe.php"><i class="fa fa-sitemap fa-fw"></i> 员工管理</a></li>
             </ul>

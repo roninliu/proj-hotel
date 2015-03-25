@@ -17,13 +17,14 @@ define(function(require, exports, module) {
 				$("."+tempItem).addClass("open")
 			}
 		}
+		$("body").addClass(pageName);
 	}
 
 	/**
 	 * [init 初始化方法]
 	 * 注册相关事件
 	 */
-	
+
 	module.exports ={
 		initMenu:initMenuHandler
 	};
